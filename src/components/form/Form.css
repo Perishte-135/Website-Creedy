@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'CorsaGrotesk', sans-serif;
+  font-weight: 400;
+  color: rgba(219, 219, 219, 1);
+  background: none;
+}
+
+.form_wrap {
+  max-width: 949px;
+  margin: 0 auto;
+  width: 100%;
+  border-radius: 40.03px;
+  background: linear-gradient(179.97deg, #000000 62.49%, #AA48FF 204.47%);
+  padding: 38px 62px 115px;
+}
+
+.form_wrap.visible {
+  max-width: 949px;
+  width: 100%;
+  left: 50%; /* Move to center */
+  transform: translateX(-50%);
+}
+
+.form_container {
+  max-width: 822.87px;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+
+@font-face {
+  font-family: 'CorsaGrotesk';
+  src: local('CorsaGrotesk'),
+  url('../../fonts/corsa-grotes-font-demo/Typedepot - Corsa Grotesk Regular.otf') format('truetype');
+}
+
+.form_title {
+  font-size: 66.33px;
+  line-height: 61.8px;
+  margin-bottom: 79.81px;
+}
+
+.application_form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form_fields {
+  display: flex;
+  flex-direction: row;
+}
+
+.form_fields div {
+  margin-right: 22.87px;
+  margin-bottom: 30.88px;
+}
+
+#field {
+  border-radius: 5.72px;
+  background: linear-gradient(179deg, #000000 62.49%, #aa48ff 204%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  margin-left: 20px;
+  font-weight: 250;
+  font-size: 22.87px;
+  line-height: 61.33px;
+  color: #DBDBDB;
+}
+
+.form_fields div:last-child {
+  margin-right: 0;
+  margin-bottom: 0;
+}
+
+.btn_wrap {
+  margin-top: 47.28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form_btn {
+  width: 544.69px;
+  height: 115.89px;
+  border-radius: 17.38px;
+  background: linear-gradient(0deg, #A181FF, #A181FF),
+  linear-gradient(0deg, #66299C, #66299C);
+  font-size: 52.15px;
+  line-height: 73.48px;
+  color: #FFFFFF;
+}
+
+/* Tablet Version */
+@media all and (min-width: 585px) and (max-width: 768px) {
+  .form_wrap {
+    max-width: 350px;
+    width: 100%;
+  }
+
+
+  .form_container {
+    max-width: 320px;
+    width: 100%;
+  }
+
+  .form_title {
+    font-size: 22px;
+    line-height: 40px;
+  }
+
+  .form_fields {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form_fields div {
+    margin-bottom: 10px;
+    width: 230px;
+  }
+
+  .form_fields div:last-child {
+    margin-bottom: 10px;
+  }
+
+  .form_btn {
+    width: 200px;
+    height: 70px;
+    font-size: 20px;
+    line-height: 40px;
+  }
+}
+
+
+/* Tablet Version */
+@media all and (min-width: 418px) and (max-width: 450px) {
+   .form_wrap {
+     max-width: 350px;
+     width: 100%;
+   }
+
+  .form_container {
+    max-width: 320px;
+    width: 100%;
+  }
+
+  .form_title {
+    font-size: 22px;
+    line-height: 40px;
+  }
+
+  .form_fields {
+     display: flex;
+    flex-direction: column;
+  }
+
+
+  .form_btn {
+    width: 200px;
+    height: 70px;
+    font-size: 20px;
+    line-height: 40px;
+  }
+}
+
+@media all and (max-width: 450px) {
+
+  .form_wrap {
+    max-width: 350px;
+    width: 100%;
+  }
+
+  .form_fields {
+    margin-bottom: 20px;
+  }
+
+  .form_wrap {
+    padding: 20px;
+  }
+
+  .form_title {
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 40px;
+  }
+
+  .form_fields div {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  #field {
+    margin-left: 0;
+    font-size: 18px;
+    line-height: 40px;
+  }
+
+  .btn_wrap {
+    margin-top: 30px;
+  }
+
+  .form_btn {
+    width: 100%;
+    max-width: 300px;
+    height: 60px;
+    font-size: 24px;
+    line-height: 40px;
+  }
+}
+
+@media all and (max-width: 418px) {
+  .form_wrap {
+    max-width: 350px;
+    width: 100%;
+  }
+
+  .form_container {
+    max-width: 320px;
+    width: 100%;
+  }
+
+  .form_title {
+    font-size: 22px;
+    line-height: 40px;
+  }
+
+  .form_fields {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form_btn {
+    width: 200px;
+    height: 70px;
+    font-size: 20px;
+    line-height: 40px;
+  }
+}
+
+/* End of Mobile Version */
+
+
+
+
+
+

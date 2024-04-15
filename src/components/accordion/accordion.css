@@ -1,0 +1,213 @@
+* {
+  color: #FFFFFF;
+}
+
+.accordion_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+button {
+  background-color: #000000;
+  border: none;
+}
+
+.question_block {
+  flex: 1 0 50%; /* Each block takes up 50% of the width */
+  max-width: 50%;
+}
+
+
+.question_block div p {
+  font-size: 30px;
+  line-height: 35px;
+}
+
+.questions_block div:last-child {
+  margin-right: 0;
+  margin-bottom: 0;
+}
+
+.arrow {
+  display: block;
+  background: url('../../components/assets/icons/Polygon 11.svg') center center no-repeat;
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+}
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 615px;
+  margin-right: 40px;
+  margin-bottom: 38px;
+  border: 3px solid rgba(82, 82, 82, 1);
+  border-radius: 15px;
+  padding: 20px 45px 30px 17px;
+}
+
+
+.accordion .toggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  padding: 10px 15px;
+  fill: black;
+  color: black;
+  transition: color 0.15s ease, fill 0.15s ease;
+  font-weight: 600;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  height: 120px;
+}
+
+.accordion .toggle:hover {
+  color: #6d6d6d;
+  fill: #6d6d6d;
+}
+
+.accordion:first-child .toggle {
+  border-bottom: 0;
+}
+
+.accordion .toggle .direction-indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15px;
+  font-weight: 600;
+}
+
+.accordion .content-parent {
+  display: flex;
+  text-align: center;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.15s ease-out;
+  color: black;
+}
+
+.accordion.toggled .content-parent {
+  max-height: 500px;
+  transition: max-height 0.25s ease-in;
+}
+
+.accordion .content {
+  padding: 10px 15px;
+}
+
+/*Laptop Version styles*/
+
+@media all and(min-width: 769px) and (max-width: 1024px) {
+
+  .accordion_wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .question_block {
+    flex: 1 0 80%; /* Each block takes up 50% of the width */
+    max-width: 80%;
+  }
+}
+
+/*End of Laptop Version styles*/
+
+/*Tablet Version styles*/
+@media all and(min-width: 585px) and (max-width: 768px) {
+  .question_block div p{
+    font-size: 19px;
+  }
+
+  .question_block div {
+    width: 360px;
+  }
+
+  .question_block {
+    flex: 1 0 80%; /* Each block takes up 50% of the width */
+    max-width: 80%;
+  }
+
+  .accordion {
+    width: 420px;
+  }
+
+
+}
+/*End of Tablet version styles*/
+/* Mobile Version */
+@media all and (min-width: 418px) and (max-width: 450px) {
+  .accordion {
+  width: 300px;
+}
+
+  .question_block div p {
+    line-height: 28px;
+    font-size: 16px;
+    max-width: 240px;
+  }
+
+  .content p {
+    font-weight: 700;
+  }
+
+  .question_block div p:last-child {
+    max-width: 280px;
+  }
+
+  .get_now {
+    font-size: 35px;
+    line-height: 50px;
+  }
+
+  .apply_loan_btn{
+    height: 80px;
+    margin-top: 30px;
+    width: 250px;
+    font-size: 20px;
+  }
+}
+
+@media all and (max-width: 418px) {
+  .accordion {
+    width: 300px;
+  }
+
+  .question_block div p {
+    line-height: 28px;
+    font-size: 16px;
+    max-width: 240px;
+  }
+
+  .content p {
+    font-weight: 700;
+    max-width: 280px;
+    margin-left: 10px;
+  }
+
+  .question_block div p:last-child {
+    max-width: 280px;
+  }
+
+  .get_now {
+    font-size: 35px;
+    line-height: 50px;
+  }
+
+  .realize_plans {
+    margin-left: 0;
+  }
+
+  .apply_loan_btn{
+    height: 80px;
+    margin-top: 30px;
+    width: 250px;
+    font-size: 20px;
+    margin-left: -30px;
+  }
+}
+/*End of Mobile Version*/

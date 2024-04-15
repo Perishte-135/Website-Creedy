@@ -1,0 +1,2061 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Play", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #FFFFFF;
+}
+
+Link {
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+@keyframes my-animation {
+  0% {
+    left: -100%;
+  }
+  30% {
+    left: 30%;
+  }
+  50% {
+    left: 60%;
+  }
+}
+
+@keyframes rotate_loan {
+  0% {
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+  25% {
+    transform: rotate3d(0, 0, 1, 90deg);
+  }
+  50% {
+    transform: rotate3d(0, 0, 1, 180deg);
+  }
+  75% {
+    transform: rotate3d(0, 0, 1, 270deg);
+  }
+  100% {
+    transform: rotate3d(0, 0, 1, 360deg);
+  }
+}
+
+.online_loans_wrapper {
+  width: 100%;
+  background: linear-gradient(148deg, #1a1c4f -9%, #000000 32%),
+  linear-gradient(330deg, #1c1f53 0%, rgba(0, 0, 0, 0) 40%);
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1440px;
+  width: 100%;
+}
+
+/*Style of online_loans*/
+
+.online_loans {
+  padding-left: 90px;
+  position: relative;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo_wrap {
+  padding: 43px 330px 80px 0;
+}
+
+.logo_img {
+  width: 154px;
+  height: 18px;
+}
+
+#menu__toggle {
+  display: none;
+}
+
+.signin-up-form {
+  display: none;
+}
+
+.menu {
+  display: flex;
+  list-style-type: none;
+  padding-top: 38px;
+}
+
+.menu_item {
+  margin-right: 21px;
+  font-size: 22px;
+  line-height: 32.83px;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.menu_item:hover {
+  transition: all 0.5s;
+  cursor: pointer;
+  color: cadetblue;
+  font-weight: 900;
+}
+
+.menu_icon {
+  display: none;
+  background: url('../../components/assets/icons/free-icon-menu-bar-10233598.png') center center no-repeat;
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+
+}
+
+.signin-signup_wrap {
+  display: flex;
+  margin-top: 37px;
+}
+
+.signin {
+  background: #0009DB;
+  border: 3px #0009DB solid;
+  width: 144px;
+  height: 48px;
+  border-radius: 96px;
+  color: #FFFFFF;
+  font-size: 22px;
+  line-height: 37px;
+  margin-right: 16px;
+}
+
+.signup {
+  margin-right: 70px;
+  background: none;
+  border: 3px solid #232769;
+  width: 195px;
+  height: 48px;
+  border-radius: 96px;
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 37px;
+}
+
+.signin:hover {
+  transition: all 0.5s;
+  cursor: pointer;
+  color: cadetblue;
+  font-weight: 900;
+}
+
+.signup:hover {
+  transition: all 0.5s;
+  cursor: pointer;
+  color: cadetblue;
+  font-weight: 900;
+}
+
+.online_loans_block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.online_loans_img {
+  width: 632px;
+  height: 613px;
+}
+
+.online_loans_img img:hover {
+  transform: scale(1.2);
+  transition: all .5s;
+}
+
+
+.online-loans-title {
+  font-weight: 700;
+  font-size: 134.14px;
+  line-height: 111.13px;
+}
+
+.secured_by_real_estate {
+  margin-top: 10px;
+  font-weight: 700;
+  font-size: 51px;
+  line-height: 42.33px;
+  color: cadetblue;
+}
+
+.get_money {
+  display: flex;
+  margin-top: 42px;
+  width: 624px;
+  background: rgba(0, 4, 80, 1);
+  border-radius: 20px;
+  opacity: 80%;
+  padding: 0 20px 29px 20px;
+}
+
+.application_details {
+  display: flex;
+  flex-direction: column;
+}
+
+.amount {
+  display: flex;
+  width: 275px;
+  justify-content: space-between;
+}
+
+.amount p {
+  font-size: 32px;
+  line-height: 48.45px;
+}
+
+.term {
+  font-size: 32px;
+  line-height: 48.45px;
+}
+
+.term_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.termValue {
+  font-size: 35px;
+  margin-right: 40px;
+}
+
+.specific_term {
+  display: flex;
+  margin-top: 10px;
+}
+
+.specific_term button {
+  outline: none;
+  background: none;
+  border: 1px solid #FFFFFF;
+  color: #CACACA;
+  font-size: 32px;
+  line-height: 48.45px;
+  width: 100px;
+  height: 45px;
+}
+
+.specific_term button:first-child {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.specific_term button:last-child {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.specific_term button:hover {
+  border: 3px deepskyblue solid;
+}
+
+.get_money_button button {
+  width: 274px;
+  height: 82px;
+  background: rgba(0, 113, 133, 1);
+  border-radius: 10px;
+  border: none;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 48.45px;
+  color: rgba(255, 255, 255, 1);
+  margin: 60px 20px 65px 0;
+}
+
+.online_loans_desc {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.new_clients {
+  font-size: 35px;
+  line-height: 37px;
+  color: rgba(140, 140, 140, 1);
+  position: absolute;
+  width: 310px;
+  left: -160px;
+  top: 30px;
+}
+
+.get_money_button button:hover {
+  transform: scaleX(1.2);
+  transition: all .5s;
+  font-weight: 900;
+  font-size: 26px;
+}
+
+@font-face {
+  font-family: 'CorsaGrotesk';
+  src: local('CorsaGrotesk'),
+  url('../../fonts/corsa-grotes-font-demo/Typedepot - Corsa Grotesk Regular.otf') format('truetype');
+}
+
+.till_amount {
+  color: rgba(0, 192, 224, 1);
+  font-family: 'CorsaGrotesk', sans-serif;
+  font-size: 60px;
+  line-height: 37px;
+  position: absolute;
+  width: 535px;
+  left: -160px;
+  top: 70px;
+}
+
+.desc {
+  color: rgba(140, 140, 140, 1);
+  font-size: 25px;
+  line-height: 29px;
+  margin-top: 9px;
+  position: absolute;
+  width: 310px;
+  top: 120px;
+  left: -160px;
+}
+
+/*End of styles online_loans*/
+/*Styles of get money form*/
+.get_money_form {
+  display: flex;
+  flex-direction: column;
+  background: #000000;
+  padding: 65px 90px 0;
+}
+
+.get_money_form h2 {
+  font-weight: 700;
+  font-size: 90px;
+  line-height: 74.7px;
+}
+
+.form {
+  display: flex;
+}
+
+.form div {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(180deg, #060717 0.1%, #11166b 107%);
+  margin-top: 59px;
+  width: 401.87px;
+  height: 321px;
+  border-radius: 10.7px;
+  margin-right: 26.79px;
+  margin-bottom: 121px;
+}
+
+.form div:last-child {
+  margin-right: 0;
+}
+
+.form div h3 {
+  font-size: 33px;
+  line-height: 37.45px;
+}
+
+.signup_form {
+  padding: 16.05px 0 67.41px;
+  background: linear-gradient(0deg, #000000, #000000),
+  linear-gradient(180.12deg, #060717 0.1%, #11166B 107.71%);
+}
+
+.signup_form h3 {
+  margin-left: 21.83px;
+}
+
+.signup_form input {
+  width: 360.14px;
+  height: 51.36px;
+  border-radius: 9.63px;
+  background: #6BEAFF;
+  /*opacity: 40%;*/
+  margin: 29.86px 0 0 19.84px;
+}
+
+.signup_form input:last-child {
+  margin-top: 29.96px;
+}
+
+.signup_form input::placeholder {
+  padding: 0 0 8.01px 8.93px;
+  color: #FFFFFF;
+}
+
+.take_photo_docs {
+  position: relative;
+  padding: 16px 0 26.75px;
+  background: linear-gradient(0deg, #000000, #000000),
+  linear-gradient(180.12deg, #060717 0.1%, #11166B 107.71%);
+}
+
+.take_photo_docs h3 {
+  margin-left: 9.58px;
+}
+
+.photo_docs {
+  margin-top: 9.58px;
+}
+
+.photo {
+  position: absolute;
+  left: 160px;
+  top: 104.12px;
+  display: block;
+  background: url('../../components/assets/icons/camera.svg');
+  width: 97.23px;
+  height: 99.51px;
+}
+
+.photo_text {
+  position: absolute;
+  width: 358.16px;
+  top: 200.12px;
+  left: 77.54px;
+  font-family: 'CorsaGrotesk', sans-serif;
+  font-size: 19.26px;
+  line-height: 21.4px;
+  color: #DEDEDE;
+}
+
+.online_contract {
+  padding: 19.26px 0 55.64px;
+}
+
+.online_contract h3 {
+  margin-left: 18.05px;
+}
+
+.input-label {
+  display: flex;
+  justify-content: space-between;
+  width: 360.14px;
+  height: 63.13px;
+  background: #6BEAFF;
+  /*opacity: 40%;*/
+  border-radius: 9.63px;
+  margin-top: 18.07px;
+  margin-left: 20.83px;
+  padding: 17px 15px 20px 12.97px;
+  color: white;
+}
+
+.input-label:last-child {
+  background: #000AFF;
+}
+
+.input-label span {
+  color: #FFFFFF;
+}
+
+.bankCard-input {
+  width: 22.82px;
+  height: 24.61px;
+  padding: 10px;
+  background-color: blue;
+  border-radius: 50%;
+  border: 1.07px solid #FFFFFF;
+}
+
+.bankCard-input:checked {
+  accent-color: white;
+}
+
+.get_money_desc {
+  background: #000000;
+  padding: 0 174px 0 93px;
+  display: flex;
+}
+
+.line {
+  height: 291px;
+  border: 10px;
+  margin: 0 42px 94px 0;
+}
+
+.get_money_desc p {
+  font-size: 40px;
+  line-height: 35px;
+}
+
+/*End of styles of get money form*/
+/*Styles of why us block*/
+.why_us_wrapper {
+  width: 100%;
+  background: linear-gradient(179.95deg, #000000 0.05%, #1A1C4F 139.06%);
+}
+
+.why_us_block {
+  padding: 63px 90px 84.62px;
+}
+
+.why_us_block h3 {
+  font-weight: 700;
+  font-size: 120px;
+  line-height: 90px;
+}
+
+.general_block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.no_change_owner:hover {
+  transform: translateX(50px);
+  transition: all 0.5s;
+}
+
+.fast_get_loan:hover {
+  transform: translateX(50px);
+  transition: all 0.5s;
+}
+
+.no_visit_to_office:hover {
+  transform: translateX(50px);
+  transition: all 0.5s;
+}
+
+.underSquare {
+  position: relative;
+  width: 373.14px;
+  height: 319.83px;
+  margin-top: 89.55px;
+  margin-left: 15.72px;
+}
+
+.overSquare {
+  position: absolute;
+  width: 377.98px;
+  height: 323.71px;
+  z-index: 1;
+  margin-top: 65.32px;
+}
+
+.general_block div:first-child {
+  margin-right: 48.68px;
+}
+
+.general_block div:last-child {
+  margin-left: 60.08px;
+}
+
+.general_block div h4 {
+  position: absolute;
+  max-width: 386px;
+  font-weight: 700;
+  font-size: 41.67px;
+  line-height: 39.09px;
+  margin-top: -320px;
+  z-index: 2;
+  margin-left: 19.38px;
+}
+
+.no_visit_office {
+  width: 306.86px;
+}
+
+.general_block div p {
+  position: absolute;
+  font-family: 'CorsaGrotesk', sans-serif;
+  font-weight: 400;
+  font-size: 23.26px;
+  line-height: 24.23px;
+  margin-top: -230px;
+  margin-left: 19.38px;
+  z-index: 2;
+  max-width: 315.98px;
+}
+
+.general_block div p:first-child {
+  font-size: 22.29px;
+  line-height: 19.38px;
+}
+
+.note {
+  position: absolute;
+  display: block;
+  background: url('../../components/assets/icons/clipboard-check.svg') center center no-repeat;
+  width: 81.41px;
+  height: 81.41px;
+  z-index: 2;
+  margin-top: -120px;
+  margin-left: 280px;
+}
+
+.watch {
+  position: absolute;
+  display: block;
+  background: url('../../components/assets/icons/Component 3.svg') center center no-repeat;
+  width: 64.94px;
+  height: 58.15px;
+  z-index: 2;
+  margin-top: -120px;
+  margin-left: 280px;
+}
+
+.globe {
+  position: absolute;
+  display: block;
+  background: url('../../components/assets/icons/Component 1.svg') center center no-repeat;
+  width: 60.09px;
+  height: 60.09px;
+  z-index: 2;
+  margin-top: -120px;
+  margin-left: 280px;
+}
+
+/*End of styles why us block*/
+/*Styles of Reviews Block*/
+
+.reviews_block_wrapper {
+  width: 100%;
+  background: linear-gradient(179deg, #000000 0.05%, #1A1C4F 139%);
+
+}
+
+.reviews_block {
+  padding: 42px 90px 70px;
+}
+
+.reviews_block h2 {
+  font-weight: 700;
+  font-size: 120px;
+  line-height: 90px;
+  margin-bottom: 61px;
+}
+
+.first_three_reviews {
+  display: flex;
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.first_review:hover {
+  transform: scale(1.2);
+  transition: all 0.5s;
+  filter: brightness(150%);
+}
+
+.second_review:hover {
+  transform: scale(1.2);
+  transition: all 0.5s;
+  filter: brightness(150%);
+}
+
+.third_review:hover {
+  transform: scale(1.2);
+  transition: all 0.5s;
+  filter: brightness(150%);
+}
+
+.fourth_review:hover {
+  transform: scale(1.2);
+  transition: all 0.5s;
+  filter: brightness(150%);
+}
+
+.fifth_review:hover {
+  transform: scale(1.2);
+  transition: all 0.5s;
+  filter: brightness(150%);
+}
+
+.sixth_review:hover {
+  transform: scale(1.2);
+  transition: all 0.5s;
+  filter: brightness(150%);
+}
+
+.second_three_reviews {
+  display: flex;
+}
+
+.review_photo {
+  width: 406px;
+  height: 255px;
+  border-radius: 20px;
+  position: relative;
+}
+
+.review {
+  position: absolute;
+  z-index: 1;
+  margin-top: -240px;
+  margin-left: 17px;
+  width: 344px;
+}
+
+.first_three_reviews div {
+  margin-right: 23px;
+}
+
+.first_three_reviews div:last-child {
+  margin-right: 0;
+}
+
+.second_three_reviews div {
+  margin-right: 28px;
+}
+
+.second_three_reviews div:last-child {
+  margin-right: 18px;
+}
+
+.overElipse {
+  display: block;
+  background: url('../../components/assets/icons/Ellipse 21.svg') center center no-repeat;
+  width: 62px;
+  height: 62px;
+  position: absolute;
+  z-index: 2;
+  margin-top: -80px;
+  margin-left: 330px;
+}
+
+.innerElipse {
+  display: block;
+  background: url('../../components/assets/icons/Ellipse 27.svg') center center no-repeat;
+  width: 52px;
+  height: 52px;
+  position: absolute;
+  z-index: 2;
+  margin-top: -75px;
+  margin-left: 335px;
+}
+
+.polygon {
+  display: block;
+  background: url('../../components/assets/icons/Polygon 1.svg') center center no-repeat;
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  z-index: 2;
+  margin-top: -67px;
+  margin-left: 346px;
+}
+
+/*End of styles of Reviews Block*/
+/*Styles of asked questions block*/
+
+.asked_questions_wrapper {
+  width: 100%;
+  background: radial-gradient(43.66% 50% at 50% 50%, rgba(35, 39, 105, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%);
+}
+
+.asked_questions_block {
+  text-align: center;
+  background: radial-gradient(43.66% 50% at 50% 50%, rgba(35, 39, 105, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%);
+  padding: 0 78px 225px 88px;
+}
+
+.asked_questions_block h2 {
+  font-weight: 700;
+  font-size: 95px;
+  line-height: 81.12px;
+  margin-bottom: 40px;
+}
+
+/*End of styles asked questions block*/
+/*Styles for Apply for loan Block*/
+
+.apply_for_loan_block {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 78px 225px 90px;
+}
+
+.get_now {
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 60px;
+  color: rgba(255, 255, 255, 1);
+}
+
+.realize_plans {
+  font-family: 'CorsaGrotesk', sans-serif;
+  font-size: 30px;
+  line-height: 26px;
+  background: linear-gradient(183deg, #fff -59%, #000aff 114%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  margin-left: 20px;
+  color: transparent;
+}
+
+.get_now:hover {
+  transform: scale(0.7);
+  animation: rotate_loan 5s normal linear infinite;
+}
+
+
+.apply_loan_btn {
+  padding: 29px 0 42px;
+  width: 445px;
+  height: 106px;
+  background: rgba(0, 6, 161, 1);
+  border-radius: 15px;
+  font-family: 'CorsaGrotesk', sans-serif;
+  color: rgba(255, 255, 255, 1);
+  font-size: 43px;
+  line-height: 35px;
+}
+
+
+.apply_loan_btn:hover {
+  transform: scale(1.2);
+  transition: all .5s;
+  font-weight: 900;
+}
+
+/*End of styles apply for loan block*/
+
+
+.form_wrap.visible {
+  max-width: 949px;
+  width: 100%;
+  left: 50%; /* Move to center */
+  transform: translateX(-50%);
+}
+
+.form-container {
+  position: absolute;
+  left: -100%; /* Initially off-screen to the left */
+  transition: transform 0.5s ease; /* Smooth transition effect on transform */
+  z-index: 1;
+  animation: my-animation 8s; /* Apply animation */
+}
+
+.form-container.show {
+  left: 220px; /* Moves the form into view using transform */
+}
+
+/*Adaptive design*/
+/*Laptop Version Styles*/
+
+@media all and (min-width: 769px) and (max-width: 1024px) {
+
+  .container {
+    max-width: 765px;
+    width: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .online_loans_block {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .general_block {
+    display: flex;
+    flex-direction: column;
+    margin-left: 80px;
+  }
+
+  .general_block div:last-child {
+    margin-left: 0;
+  }
+
+  .first_three_reviews {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .first_three_reviews div {
+    margin-bottom: 30px;
+  }
+
+  .second_three_reviews {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .second_three_reviews div {
+    margin-bottom: 30px;
+  }
+
+  .apply_loan_btn {
+    margin-top: 80px;
+  }
+
+  .reviews_block {
+    padding: 42px 180px 70px;
+  }
+
+  .reviews_block h2 {
+    font-size: 70px;
+  }
+
+  .apply_for_loan_block {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .asked_questions_block h2 {
+    font-size: 70px;
+    line-height: 70px;
+  }
+
+  .question_block div p {
+    font-size: 28px;
+  }
+
+  .accordion_wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .question_block {
+    flex: 1 0 80%; /* Each block takes up 50% of the width */
+    max-width: 80%;
+  }
+
+
+  .menu {
+    padding-top: 0;
+  }
+
+  .get_now {
+    font-size: 70px;
+  }
+
+  .online_loans_title {
+    order: 1;
+  }
+
+  .online_loans_desc {
+    order: 2;
+    margin-left: 100px;
+  }
+
+  .online_loans_img {
+    order: 3;
+    margin-top: 270px;
+    width: 500px;
+    height: 500px;
+  }
+
+  .online_loans_img img {
+    width: 500px;
+    height: 500px;
+  }
+
+  .get_money_form {
+    padding: 65px 180px 0;
+    text-align: center;
+  }
+
+  .get_money_form h2 {
+    font-size: 70px;
+  }
+
+  .get_money_desc {
+    padding: 0;
+  }
+
+  .why_us_block h3 {
+    font-size: 70px;
+  }
+
+  .new_clients {
+    left: 0;
+  }
+
+  .till_amount {
+    left: 0;
+  }
+
+  .desc {
+    left: 0;
+  }
+}
+
+/*End of Laptop Version styles*/
+
+/*Tablet Version Styles*/
+
+@media all and (min-width: 585px) and (max-width: 768px) {
+
+  .container {
+    max-width: 590px;
+    width: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .online_loans_block {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .online_loans {
+    padding-left: 50px;
+  }
+
+  .online_loans_desc {
+    order: 2;
+    margin-left: 70px;
+  }
+
+  .secured_by_real_estate {
+    font-size: 40px;
+  }
+
+  .asked_questions_block h2 {
+    font-size: 40px;
+  }
+
+  .get_money {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .get_money_form h2 {
+    font-size: 60px;
+    margin-top: 50px;
+  }
+
+  .form div {
+    margin-bottom: 50px;
+  }
+
+  .new_clients {
+    left: 0;
+  }
+
+  .till_amount {
+    left: 0;
+  }
+
+  .desc {
+    left: 0;
+  }
+
+  .logo_wrap {
+    padding-right: 100px;
+  }
+
+  .online_loans_img {
+    width: 280px;
+    height: 280px;
+    order: 3;
+    margin-top: 250px;
+  }
+
+  .why_us_block {
+    padding-right: 0;
+    padding-left: 50px;
+  }
+
+  .reviews_block {
+    padding-right: 30px;
+    padding-left: 50px;
+  }
+
+  .reviews_block h2 {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .till_amount {
+    width: 400px;
+  }
+
+  .online_loans_img img {
+    width: 380px;
+    height: 380px;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .get_money_desc {
+    padding: 0;
+  }
+
+  .first_three_reviews {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .first_three_reviews div {
+    margin-bottom: 30px;
+  }
+
+  .second_three_reviews div {
+    margin-bottom: 30px;
+  }
+
+  .general_block {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .general_block div:last-child {
+    margin-left: 0;
+  }
+
+  .second_three_reviews {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .apply_for_loan_block {
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px 30px 80px;
+  }
+
+  .get_now {
+    font-size: 60px;
+  }
+
+  .apply_loan_btn {
+    width: 400px;
+    margin-top: 30px;
+  }
+
+  .question_block div {
+    width: 420px;
+  }
+
+  .question_block div p {
+    width: 360px;
+  }
+
+  .accordion_wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .question_block {
+    flex: 1 0 80%; /* Each block takes up 50% of the width */
+    max-width: 80%;
+  }
+
+  .menu {
+    padding-top: 0;
+  }
+
+  .online-loans-title {
+    font-size: 60px;
+    order: 1;
+  }
+
+  .get_money_desc p {
+    width: 500px;
+    font-size: 28px;
+    margin-left: 20px;
+  }
+
+  .line {
+    margin: 0;
+  }
+
+  .why_us_block h3 {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+/*End of Tablet Version  Styles*/
+
+/* Mobile Version */
+@media all and (min-width: 418px) and (max-width: 450px) {
+
+  /*Styles for hamburger menu*/
+  #menu__toggle {
+    display: block;
+  }
+
+  .signin-up-form {
+    display: block;
+  }
+
+  #menu__toggle {
+    opacity: 0;
+  }
+
+  .menu__btn {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 50px;
+    left: 25px;
+    width: 26px;
+    height: 26px;
+    z-index: 1;
+    cursor: pointer;
+  }
+
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #0009DB;
+  }
+
+  .menu__btn > span::before {
+    content: '';
+    top: -8px;
+  }
+
+  .menu__btn > span::after {
+    content: '';
+    top: 8px;
+  }
+
+  .menu {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    text-align: center;
+    background-color: #ECEFF1;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+  }
+
+  /* элементы меню */
+  .menu_item {
+    display: block;
+    padding: 12px 24px;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .menu_item:hover {
+    background-color: #CFD8DC;
+  }
+
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+
+  #menu__toggle:checked ~ .menu {
+    visibility: visible;
+    left: 0;
+  }
+
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    transition-duration: .25s;
+  }
+
+  .menu {
+    transition-duration: .25s;
+  }
+
+  .menu_item {
+    transition-duration: .25s;
+  }
+
+  /*End fo styles for hamburger menu*/
+  body {
+    overflow-x: hidden
+  }
+
+  .container {
+    max-width: 418px;
+    width: 100%;
+    margin: 0 auto;
+    overflow-x: hidden
+  }
+
+  .online_loans {
+    padding-left: 60px;
+  }
+
+  .header {
+    position: relative;
+    justify-content: flex-start;
+  }
+
+  .menuIconWrap {
+    order: 1;
+    margin-right: 100px;
+    padding-top: 43px
+  }
+
+  .logo_wrap {
+    order: 2;
+    padding-right: 0;
+    margin-left: 150px;
+  }
+
+  .logo_img {
+    width: 100px;
+    height: 40px;
+  }
+
+  .signin-signup_wrap {
+    display: none;
+  }
+
+  .menu_icon {
+    display: block;
+  }
+
+
+  .online_loans_block {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .online_loans_img {
+    margin-top: 250px;
+    height: 200px;
+    max-width: 300px;
+  }
+
+  .online_loans_img img {
+    width: 340px;
+    height: 200px;
+  }
+
+  .online-loans-title {
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 60px;
+  }
+
+  .secured_by_real_estate {
+    font-size: 40px;
+  }
+
+  .new_clients {
+    left: 0;
+    font-size: 25px;
+  }
+
+  .till_amount {
+    left: 0;
+    font-size: 40px;
+    max-width: 280px;
+  }
+
+  .desc {
+    left: 0;
+    font-size: 20px;
+  }
+
+  .get_money {
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+  }
+
+  .get_money_form {
+    padding: 60px;
+  }
+
+  .get_money_form h2 {
+    font-size: 40px;
+    line-height: 55px;
+  }
+
+  .photo {
+    left: 110px;
+    top: 120px;
+  }
+
+  .photo_text {
+    top: 210px;
+    left: 20px;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form div {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .form div h3 {
+    font-size: 28px;
+  }
+
+  .general_block {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .signup_form input {
+    width: 280px;
+  }
+
+  .input-label {
+    width: 300px;
+    margin-left: 0;
+  }
+
+  .get_money_desc {
+    padding: 0;
+    padding-left: 60px;
+  }
+
+  .get_money_desc p {
+    max-width: 280px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .line {
+    display: none;
+  }
+
+  .why_us_block {
+    padding: 0;
+  }
+
+  .why_us_block h3 {
+    margin-left: 60px;
+    margin-top: 40px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 30px;
+  }
+
+  .overSquare {
+    width: 300px;
+    height: 300px;
+  }
+
+  .underSquare {
+    width: 300px;
+    height: 300px;
+  }
+
+  .general_block {
+    padding-left: 60px;
+  }
+
+  .general_block div:last-child {
+    margin-left: 0;
+  }
+
+  .general_block div h4 {
+    max-width: 300px;
+    line-height: 30px;
+    font-size: 25px;
+  }
+
+  .general_block div p {
+    margin-top: -240px;
+    max-width: 280px;
+    font-size: 18px;
+  }
+
+  .note, .watch, .globe {
+    width: 70px;
+    height: 70px;
+    margin-top: -110px;
+    margin-left: 200px;
+  }
+
+  .reviews_block {
+    padding: 0;
+    padding-left: 60px;
+  }
+
+  .reviews_block h2 {
+    margin-top: 30px;
+    font-size: 30px;
+    line-height: 30px;
+    max-width: 280px;
+  }
+
+  .first_three_reviews {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .first_three_reviews div {
+    margin-right: 0;
+  }
+
+  .first_three_reviews div img {
+    width: 300px;
+    margin-bottom: 10px;
+  }
+
+  .review {
+    margin-top: -180px;
+    width: 270px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .overElipse {
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    margin-top: -60px;
+    margin-left: 230px;
+  }
+
+  .innerElipse {
+    margin-top: -55px;
+    margin-left: 234px;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+  }
+
+  .polygon {
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+    margin-top: -50px;
+    margin-left: 243px;
+  }
+
+  .third_review .review {
+    margin-top: -240px;
+  }
+
+  .second_three_reviews {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .second_three_reviews div img {
+    width: 300px;
+    margin-bottom: 10px;
+  }
+
+  .asked_questions_block {
+    padding: 60px;
+  }
+
+  .third_review img {
+    height: 189px;
+  }
+
+  .third_review .review {
+    margin-top: -180px;
+  }
+
+  .question_block div p {
+    line-height: 28px;
+    font-size: 16px;
+    max-width: 240px;
+  }
+
+  .asked_questions_block h2 {
+    font-size: 28px;
+    line-height: 35px;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    max-width: 280px;
+  }
+
+  .apply_for_loan_block {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .accordion_wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .question_block {
+    flex: 1 0 80%; /* Each block takes up 50% of the width */
+    max-width: 80%;
+  }
+
+  .question_block div p {
+    font-size: 16px;
+    max-width: 240px;
+  }
+}
+
+@media all and (max-width: 418px) {
+
+
+  #menu__toggle {
+    display: block;
+  }
+
+  /*Styles for hamburger menu*/
+  .signin-up-form {
+    display: block;
+  }
+
+  #menu__toggle {
+    opacity: 0;
+  }
+
+  .menu__btn {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 50px;
+    left: 10px;
+    width: 26px;
+    height: 26px;
+    z-index: 1;
+    cursor: pointer;
+  }
+
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #0009DB;
+  }
+
+  .menu__btn > span::before {
+    content: '';
+    top: -8px;
+  }
+
+  .menu__btn > span::after {
+    content: '';
+    top: 8px;
+  }
+
+  .menu {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 250px;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    text-align: center;
+    background-color: #ECEFF1;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+  }
+
+  /* элементы меню */
+  .menu_item {
+    display: block;
+    padding: 12px 24px;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .menu_item:hover {
+    background-color: #CFD8DC;
+  }
+
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+
+  #menu__toggle:checked ~ .menu {
+    visibility: visible;
+    left: 0;
+  }
+
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    transition-duration: .25s;
+  }
+
+  .menu {
+    transition-duration: .25s;
+  }
+
+  .menu_item {
+    transition-duration: .25s;
+  }
+
+  /*End for styles for hamburger menu*/
+  .container {
+    max-width: 350px;
+    width: 100%;
+    margin: 0 auto;
+    overflow-x: hidden
+  }
+
+  .online_loans {
+    padding-left: 20px;
+  }
+
+  .header {
+    position: relative;
+    justify-content: flex-start;
+  }
+
+  .menuIconWrap {
+    order: 1;
+    margin-right: 100px;
+    padding-top: 43px
+  }
+
+  .logo_wrap {
+    order: 2;
+    padding-right: 0;
+    margin-left: 150px;
+  }
+
+  .logo_img {
+    width: 100px;
+    height: 40px;
+  }
+
+
+  .signin-signup_wrap {
+    display: none;
+  }
+
+  .menu_icon {
+    display: block;
+  }
+
+
+  .online_loans_block {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .online_loans_img {
+    margin-top: 250px;
+    height: 200px;
+    max-width: 300px;
+  }
+
+  .online_loans_img img {
+    width: 340px;
+    height: 200px;
+  }
+
+  .online-loans-title {
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 60px;
+  }
+
+  .secured_by_real_estate {
+    font-size: 40px;
+  }
+
+  .new_clients {
+    left: 0;
+    font-size: 25px;
+  }
+
+  .till_amount {
+    left: 0;
+    font-size: 40px;
+    max-width: 280px;
+  }
+
+  .desc {
+    left: 0;
+    font-size: 20px;
+  }
+
+  .get_money {
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+  }
+
+  .get_money_form {
+    padding: 20px;
+  }
+
+  .get_money_form h2 {
+    font-size: 40px;
+    line-height: 55px;
+  }
+
+  .photo {
+    left: 110px;
+    top: 120px;
+  }
+
+  .photo_text {
+    top: 210px;
+    left: 20px;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form div {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .form div h3 {
+    font-size: 28px;
+  }
+
+  .general_block {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .signup_form input {
+    width: 280px;
+  }
+
+  .input-label {
+    width: 300px;
+    margin-left: 0;
+  }
+
+  .get_money_desc {
+    padding: 0;
+    padding-left: 20px;
+  }
+
+  .get_money_desc p {
+    max-width: 280px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .line {
+    display: none;
+  }
+
+  .why_us_block {
+    padding: 0;
+  }
+
+  .why_us_block h3 {
+    margin-left: 20px;
+    margin-top: 40px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 30px;
+  }
+
+  .overSquare {
+    width: 300px;
+    height: 300px;
+  }
+
+  .underSquare {
+    width: 300px;
+    height: 300px;
+  }
+
+  .general_block {
+    padding-left: 20px;
+  }
+
+  .general_block div:last-child {
+    margin-left: 0;
+  }
+
+  .general_block div h4 {
+    max-width: 300px;
+    line-height: 30px;
+    font-size: 25px;
+  }
+
+  .general_block div p {
+    margin-top: -240px;
+    max-width: 280px;
+    font-size: 18px;
+  }
+
+  .note, .watch, .globe {
+    width: 70px;
+    height: 70px;
+    margin-top: -110px;
+    margin-left: 200px;
+  }
+
+  .reviews_block {
+    padding: 0;
+    padding-left: 20px;
+  }
+
+  .reviews_block h2 {
+    margin-top: 30px;
+    font-size: 30px;
+    line-height: 30px;
+    max-width: 280px;
+  }
+
+  .first_three_reviews {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .first_three_reviews div {
+    margin-right: 0;
+  }
+
+  .first_three_reviews div img {
+    width: 300px;
+    margin-bottom: 10px;
+  }
+
+  .review {
+    margin-top: -180px;
+    width: 270px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .overElipse {
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    margin-top: -60px;
+    margin-left: 230px;
+  }
+
+  .innerElipse {
+    margin-top: -55px;
+    margin-left: 234px;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+  }
+
+  .polygon {
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+    margin-top: -50px;
+    margin-left: 243px;
+  }
+
+  .third_review .review {
+    margin-top: -240px;
+  }
+
+  .second_three_reviews {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .second_three_reviews div img {
+    width: 300px;
+    margin-bottom: 10px;
+  }
+
+  .asked_questions_block {
+    padding: 20px;
+  }
+
+  .third_review img {
+    height: 189px;
+  }
+
+  .third_review .review {
+    margin-top: -180px;
+  }
+
+  .question_block div p {
+    font-size: 16px;
+    line-height: 28px;
+    width: 280px;
+  }
+
+  .asked_questions_block h2 {
+    font-size: 28px;
+    line-height: 35px;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    max-width: 280px;
+  }
+
+  .apply_for_loan_block {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* End of Mobile Version */
+/*End of style for Adaptive design*/
